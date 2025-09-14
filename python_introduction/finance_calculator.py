@@ -1,10 +1,10 @@
-# this is basic finance calculator project based on one's total income and expenses in a month
-monthly_income = input("Enter your monthly income")
-monthly_expenses = input("Enter your total monthly expenses")
+## Finance calculator
+
+monthly_income = float(input("Enter your monthly income"))
+monthly_expenses = float(input("Enter your total monthly expenses"))
 monthly_savings = monthly_income - monthly_expenses
-print(f"Your monthly savings  are, {monthly_savings}")
 
-#The projected savings in a year based on an interest rate of five percent 
+print(f"Your monthly savings are, {monthly_savings}")
+projected_savings = monthly_savings * 12 + (monthly_savings *12 * 0.05)
 
-projected_savings = monthly_savings * 12 + (monthly_savings * 12 * 0.05)
-print(f"Projected savings after one year with interest  are, {projected_savings}")
+print(f"Projected savings after one year, with interest, is: {projected_savings}")

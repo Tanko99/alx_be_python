@@ -1,10 +1,10 @@
 # multiplication table
 
-number = int(input("Enter the number you want to see its multiplication:"))
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+number = int(input("Enter a number  to see its multiplication table:"))
 
-for i in numbers:
-    result = number * i
-    print(f"{number} * {i} = {result}")
+
+for i in range(1, 11):
+    product = number * i
+    print(f"{number} * {i} = {product}")
     
     

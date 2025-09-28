@@ -11,7 +11,11 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ").strip()
+        try:
+            choice =int(input("Enter your choice: ").strip())
+        except ValueError:
+            print("Invalid input. Please enter a number")
+            continue
 
         if choice == '1':
             item = input("Enter the item to add to the shopping list: ").strip()
